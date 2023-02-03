@@ -365,31 +365,3 @@ That's it for this tutorial.Thank you for reading.
 Remember to check out the source code on github at [https://github.com/Annastacia-dev/omniauth-rails](https://github.com/Annastacia-dev/omniauth-rails).
 Feel free to leave any comments or questions below or reach out to me on email at [annetotoh@gmail.com](mailto:annetotoh@gmail.com).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ...
-# omiauth-rails
-# omniauth
-# omniauth
