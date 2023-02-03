@@ -6,10 +6,7 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
-
-
-
-
+  get '/auth/:provider/callback', to: 'sessions#omniauth'
 
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
