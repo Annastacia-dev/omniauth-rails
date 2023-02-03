@@ -7,7 +7,6 @@ To get started we will need to set up an authentication system in our rails app.
 You can check on your browser to see if you have a session cookie by going to the developer tools and looking at the cookies tab. You should see a cookie called <your_app_name>_session. This is the cookie that is used to keep track of the user.
 For chrome you can go to the developer tools by pressing F12 and then clicking on the Application tab. Then click on the Cookies tab then you should see your domain click on it and you should see your session cookie.
 For firefox you can go to the developer tools by pressing F12 and then clicking on the Storage tab. Then click on the Cookies tab then you should see your domain click on it and you should see your session cookie.
-In the images below, you can see that before I log in a user I have no session cookie and after I log in I have a session cookie.
 
 ### Setting up the app
 Lets start by creating a new rails app. We will call it omniauth-rails.
