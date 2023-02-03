@@ -1,18 +1,19 @@
-<h1>Login to your account</h1>
-<% if flash[:error] %>
-    <p><%= flash[:error] %></p>
-<% end %>
+<div class="container">
+    <h1>Login to your account</h1>
+    <% if flash[:error] %>
+        <p><%= flash[:error] %></p>
+    <% end %>
+    <%= form_for :session, url: login_path do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.submit "Login" %>
+    <% end %>
 
+    <p>Don't have an account? <%= link_to "Sign up", signup_path %></p>
 
-<%= form_for :session, url: login_path do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-    <%= f.submit "Login" %>
-<% end %>
+    <h3> Or login with</h3>
+    <%= button_to 'Google', '/auth/google_oauth2' %>
+</div>
 
-<p>Don't have an account? <%= link_to "Sign up", signup_path %></p>
-
-<h3> Or login with</h3>
-<%= button_to 'Google', '/auth/google_oauth2' %>
