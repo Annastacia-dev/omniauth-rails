@@ -360,6 +360,8 @@ A button_to is a form that will send a post request to the specified path.
 Our application is now ready to use google oauth.
 To test it out, run the rails server and go to [http://localhost:3000/login](http://localhost:3000/login).
 
+Check out the [live site](https://railsomniauth.onrender.com) here.
+
 That's it for this tutorial.Thank you for reading.
 Remember to check out the source code on github at [https://github.com/Annastacia-dev/omniauth-rails](https://github.com/Annastacia-dev/omniauth-rails).
 Feel free to leave any comments or questions below or reach out to me on email at [annetotoh@gmail.com](mailto:annetotoh@gmail.com).
