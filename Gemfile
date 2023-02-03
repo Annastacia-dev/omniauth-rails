@@ -77,6 +77,8 @@ group :test do
   gem "webdrivers"
 end
 
+gem "font-awesome-sass", "~> 6.2.1"
+
 gem 'bcrypt'
 
 gem 'omniauth'
@@ -86,3 +88,5 @@ gem 'omniauth-google-oauth2'
 gem 'dotenv-rails'
 
 gem 'omniauth-rails_csrf_protection'
+
+gem 'omniauth-facebook'

@@ -17,6 +17,7 @@
  /* auth forms */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "font-awesome";
 
 
 
@@ -40,7 +41,7 @@ h1{
     font-size: 24px;
     font-weight: 500;
     color: #333;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -138,6 +139,44 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: capitalize;
+}
+
+.omniauth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omniauth-container form{
+    box-shadow: none;
+    background: none;
+    padding: 30px;
+    width: 150px;
+    margin-top: -40px;
+}
+
+.google{
+    background:rgb(219,68,55);
+    color: #fff;
+    border: 1px solid rgb(219,68,55);
+}
+
+.google:hover{
+    background:rgb(255, 255, 255);
+    color: rgb(219,68,55);
+    border: 1px solid rgb(219,68,55);
+}
+
+.facebook{
+    background: #3b5998;
+    color: #fff;
+    border: 1px solid #3b5998;
+}
+
+.facebook:hover{
+    background: #fff;
+    color: #3b5998;
+    border: 1px solid #3b5998;
 }
 
 

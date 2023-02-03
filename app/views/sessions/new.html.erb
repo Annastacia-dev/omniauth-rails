@@ -12,8 +12,18 @@
     <% end %>
 
     <p>Don't have an account? <%= link_to "Sign up", signup_path %></p>
-
     <h3> Or login with</h3>
-    <%= button_to 'Google', '/auth/google_oauth2' %>
+
+    <div class="omniauth-container">
+    <%= button_to '/auth/google_oauth2', method: :post, class: 'google' do %>
+        <%= icon('fab', 'google') %>
+    <% end %>    
+    <%= button_to '/auth/facebook', method: :post, class: 'facebook' do %>
+        <i class="fa-brands fa-facebook-f"></i>
+    <% end %>
 </div>
+
+</div>
+
+
 
