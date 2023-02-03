@@ -7,6 +7,7 @@
 default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  encoding: unicode
   timeout: 5000
   username: postgres
   password: dev4608
@@ -24,4 +25,4 @@ test:
 
 production:
   <<: *default
-  database: omniauth_rails_production
+  url: <%= ENV['DATABASE_URL'] %>
