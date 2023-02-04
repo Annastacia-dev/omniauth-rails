@@ -3,5 +3,9 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   {
     prompt: 'select_account'
   }
-  provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
+  provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'],
+  {
+    prompt: 'select_account'
+  }
+  provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
 end

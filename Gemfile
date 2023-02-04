@@ -90,3 +90,5 @@ gem 'dotenv-rails'
 gem 'omniauth-rails_csrf_protection'
 
 gem 'omniauth-facebook'
+
+gem 'omniauth-github'
