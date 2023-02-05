@@ -94,3 +94,5 @@ gem 'omniauth-facebook'
 gem 'omniauth-github'
 
 gem 'omniauth-twitter2'
+
+gem 'omniauth-linkedin-oauth2'
