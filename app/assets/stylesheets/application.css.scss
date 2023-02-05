@@ -28,11 +28,33 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: #f5f5f5;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .container{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.omniauth-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: #f5f5f5;
 }
@@ -41,7 +63,6 @@ h1{
     font-size: 24px;
     font-weight: 500;
     color: #333;
-    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -141,18 +162,16 @@ h2{
     text-transform: capitalize;
 }
 
-.omniauth-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .omniauth-container form{
     box-shadow: none;
     background: none;
     padding: 30px;
-    width: 150px;
-    margin-top: -40px;
+    width: 50%;
+    margin-top: -50px;
+}
+
+.omniauth-container form i{
+    margin-right: 15px;
 }
 
 .google{
@@ -213,6 +232,52 @@ h2{
     background: #fff;
     color: #333;
     border: 1px solid #333;
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        height: auto;
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #f5f5f5;
+        margin-top: 50px;
+    }
+
+    .omniauth-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #f5f5f5;
+        margin-top: 20px;
+    }
+
+    form{
+        width: 100%;
+        background: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .omniauth-container form{
+        box-shadow: none;
+        background: none;
+        padding: 30px;
+        width: 100%;
+        margin-top: -50px;
+    }
 }
 
 

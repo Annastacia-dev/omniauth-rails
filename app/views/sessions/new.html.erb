@@ -1,3 +1,4 @@
+<div class="main-container">
 <div class="container">
     <h1>Login to your account</h1>
     <% if flash[:error] %>
@@ -12,25 +13,26 @@
     <% end %>
 
     <p>Don't have an account? <%= link_to "Sign up", signup_path %></p>
-    <h3> Or login with</h3>
+    
+</div>
 
     <div class="omniauth-container">
     <%= button_to '/auth/google_oauth2', method: :post, class: 'google' do %>
-        <%= icon('fab', 'google') %>
+        <%= icon('fab', 'google') %> <span>Continue with Google</span>
     <% end %>    
     <%= button_to '/auth/facebook', method: :post, class: 'facebook' do %>
-        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-facebook-f"></i>  <span>Continue with Facebook</span>
     <% end %>
     <%= button_to '/auth/github', method: :post, class: 'github' do %> 
-        <%= icon('fab', 'github') %>
+        <%= icon('fab', 'github') %> <span>Continue with Github</span>
     <% end %>
     <%= button_to '/auth/twitter2', method: :post, class: 'twitter' do %>
-        <%= icon('fab', 'twitter') %>
+        <%= icon('fab', 'twitter') %> <span>Continue with Twitter</span>
     <% end %>
     <%= button_to '/auth/linkedin', method: :post, class: 'linkedin' do %>
-        <%= icon('fab', 'linkedin-in') %>
+        <%= icon('fab', 'linkedin-in') %> <span>Continue with Linkedin</span>
     <% end %>
-</div>
+    </div>
 
 </div>
 
