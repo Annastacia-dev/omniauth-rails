@@ -69,6 +69,7 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     bcrypt (3.1.18)
+    bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -154,8 +155,9 @@ GEM
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
-    omniauth-facebook (9.0.0)
-      omniauth-oauth2 (~> 1.2)
+    omniauth-facebook (10.0.0)
+      bigdecimal
+      omniauth-oauth2 (>= 1.2, < 3)
     omniauth-github (2.0.1)
       omniauth (~> 2.0)
       omniauth-oauth2 (~> 1.8)
@@ -164,7 +166,7 @@ GEM
       oauth2 (~> 2.0.6)
       omniauth (~> 2.0)
       omniauth-oauth2 (~> 1.8.0)
-    omniauth-linkedin-oauth2 (1.0.0)
+    omniauth-linkedin-oauth2 (1.0.1)
       omniauth-oauth2
     omniauth-oauth2 (1.8.0)
       oauth2 (>= 1.4, < 3)
@@ -276,10 +278,10 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   omniauth
-  omniauth-facebook
+  omniauth-facebook (~> 10.0)
   omniauth-github
   omniauth-google-oauth2
-  omniauth-linkedin-oauth2
+  omniauth-linkedin-oauth2 (~> 1.0, >= 1.0.1)
   omniauth-rails_csrf_protection
   omniauth-twitter2
   pg

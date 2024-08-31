@@ -34,5 +34,6 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore envrinonment variables
+# Ignore environment variables
 .env
+.byebug_history
